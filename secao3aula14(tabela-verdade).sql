@@ -1,0 +1,25 @@
+/* OPERADORES LOGICOS */
+
+/*  A  /  B  / A ou B / A e B */
+/*  V  /  V  /    V   /   V   */
+/*  V  /  F  /    V   /   F   */
+/*  F  /  V  /    V   /   F   */
+/*  F  /  F  /    F   /   F   */
+
+/* OR - OU */
+
+SELECT NOME, SEXO, ENDERECO FROM CLIENTE
+WHERE SEXO = 'M' OR ENDERECO LIKE '%RJ';
+
+SELECT NOME, SEXO, ENDERECO FROM CLIENTE
+WHERE SEXO = 'F' OR ENDERECO LIKE '%CENTRO';
+
+/* AND - E */
+
+SELECT NOME, SEXO, ENDERECO FROM CLIENTE
+WHERE SEXO = 'M' AND ENDERECO LIKE '%SC';
+
+SELECT NOME, SEXO, ENDERECO FROM CLIENTE
+WHERE SEXO = 'F' AND ENDERECO LIKE '%ESTACIO';
+
+
